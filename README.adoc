@@ -7,8 +7,8 @@ To build graalvm native application with maven installed.
 ```
 FROM shyndard/graalvm-native-build:java11-maven363
 WORKDIR /build/
-COPY . /build/
-RUN mvn -f /build/pom.xml package -Pnative
+COPY . .
+RUN mvn package -Pnative
 ```
 
 ## Project example
