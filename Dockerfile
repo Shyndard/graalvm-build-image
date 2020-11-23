@@ -9,5 +9,4 @@ ENV M2_HOME=/maven/apache-maven-3.6.3
 ENV PATH=${M2_HOME}/bin:${PATH}
 
 # Installing graalvm native image
-WORKDIR /build/
 RUN gu install native-image
