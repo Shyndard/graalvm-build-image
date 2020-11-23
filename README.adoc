@@ -1,0 +1,16 @@
+# Graalvm build image
+
+To build graalvm native application with maven installed.
+
+## Dockerfile example with quarkus application
+
+```
+FROM shyndard/quarkus-build:java11-maven363
+WORKDIR /build/
+COPY . /build/
+RUN mvn -f /build/pom.xml package -Pnative
+```
+
+## Project example
+
+Want an example ? See native build application with quarkus & graalvm : https://github.com/Shyndard/sample-quarkus-restapi[sample-quarkus-restapi]
