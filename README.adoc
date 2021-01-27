@@ -5,7 +5,7 @@ To build graalvm native application with maven installed.
 ## Dockerfile example with quarkus application
 
 ```
-FROM shyndard/graalvm-native-build:java11-maven363
+FROM shyndard/graalvm-native-build:java11-graalvm20.3.1-maven3.6.3
 WORKDIR /build/
 COPY . .
 RUN mvn package -Pnative
