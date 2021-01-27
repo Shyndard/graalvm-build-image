@@ -11,6 +11,7 @@ RUN yum install wget -y
 WORKDIR /graalvm/
 RUN wget https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.3.1/graalvm-ce-java11-linux-amd64-20.3.1.tar.gz
 RUN tar -xvzf graalvm-ce-java11-linux-amd64-20.3.1.tar.gz
+RUN rm graalvm-ce-java11-linux-amd64-20.3.1.tar.gz
 ENV JAVA_HOME=/graalvm/graalvm-ce-java11-20.3.1
 ENV PATH=${JAVA_HOME}/bin:${PATH}
 
